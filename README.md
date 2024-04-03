@@ -14,18 +14,48 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 
 ## Procedure :
 
-![imAGE](2.png)
-
+![2](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/5af08c80-12d6-47a2-a366-e160f100d9b6)
 
 
 ## Experiment:
 
+![292727331-177ee20a-93ef-4557-93af-b65988d549d6](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/32545f17-5d5d-40e0-8e5f-a17109977e71)
 
- 
+
+![239145706-1be511c9-fdc1-4532-9973-411dca77f805](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/d35647c6-823b-41c5-ab2a-58eee63edad7)
+
 ## Program
-![image](https://github.com/ramjan1729/Single-server-infinite-capacity---Markov-Model/assets/103921593/5f1fd58d-5929-4c51-89ea-4cef009e5bad)
 
-## Output :
+~~~
+DEVELOPRD BY : VARSHA A
+REGISTER NO  : 212223220121
 
-## Result :
+arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
+ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
+Robot_time=float(input("Enter the Additional time taken for the Robot (in secs) :  "))
+lam=1/arr_time
+mu=1/(ser_time+Robot_time)
+print("--------------------------------------------------------------")
+print("Single Server with Infinite Capacity - (M/M/1):(oo/FIFO)")
+print("--------------------------------------------------------------")
+print("The mean arrival rate per second : %0.2f "%lam)
+print("The mean service rate per second : %0.2f "%mu)
+if (lam <  mu):
+    Ls=lam/(mu-lam)
+    Lq=Ls-lam/mu
+    Ws=Ls/lam
+    Wq=Lq/lam
+    print("Average number of objects in the system : %0.2f "%Ls)
+    print("Average number of objects in the conveyor :  %0.2f "%Lq)
+    print("Average waiting time of an object in the system : %0.2f secs"%Ws)
+    print("Average waiting time of an object in the conveyor : %0.2f secs"%Wq)
+    print("Probability that the system is busy : %0.2f "%(lam/mu) )
+    print("Probability that the system is empty : %0.2f "%(1-lam/mu) )
+else:
+    print("Warning! Objects Over flow will happen in the conveyor")
+print("---------------------------------------------------------------")
+~~~
+
+## Result : 
+The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
 
