@@ -16,14 +16,9 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 
 ![2](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/5af08c80-12d6-47a2-a366-e160f100d9b6)
 
-## Output :
-
-![OP1](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/c2d975aa-169b-4538-a8a3-083f523bf12f)
-
 ## Experiment:
 
 ![292727331-177ee20a-93ef-4557-93af-b65988d549d6](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/32545f17-5d5d-40e0-8e5f-a17109977e71)
-
 
 ![239145706-1be511c9-fdc1-4532-9973-411dca77f805](https://github.com/04Varsha/Single-server-infinite-capacity---Markov-Model/assets/149035374/d35647c6-823b-41c5-ab2a-58eee63edad7)
 
